@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "90ff09ac-0afa-4806-a5e3-0cc495c26b97",
+		"name": "User-Management-API-Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39787995"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Shankar\",\r\n    \"lastName\": \"jadhav\",\r\n    \"email\": \"abcd@gmail.com\",\r\n    \"phone\": \"7574877458\",\r\n    \"password\": \"abcdef\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"abcd@gmail.com\",\r\n    \"password\": \"abcdef\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFiOTAwNjdhLTJjMDgtNGYwZi1hZTM5LWU5NTJmOTVjNWIwYyIsImVtYWlsIjoiYWJjZDFAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzMyNzk2NzAzLCJleHAiOjE3MzI4MDAzMDN9.FB56cH4jez9IexPutL7ULGsulnbTTPGH9Q0t5ZH3qbc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users/ce50a8a4-1fe4-4d2a-8687-0bdcd711607b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"ce50a8a4-1fe4-4d2a-8687-0bdcd711607b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFiOTAwNjdhLTJjMDgtNGYwZi1hZTM5LWU5NTJmOTVjNWIwYyIsImVtYWlsIjoiYWJjZDFAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzMyNzk2NzAzLCJleHAiOjE3MzI4MDAzMDN9.FB56cH4jez9IexPutL7ULGsulnbTTPGH9Q0t5ZH3qbc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/ce50a8a4-1fe4-4d2a-8687-0bdcd711607b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"ce50a8a4-1fe4-4d2a-8687-0bdcd711607b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch all users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFiOTAwNjdhLTJjMDgtNGYwZi1hZTM5LWU5NTJmOTVjNWIwYyIsImVtYWlsIjoiYWJjZDFAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzMyNzk2NzAzLCJleHAiOjE3MzI4MDAzMDN9.FB56cH4jez9IexPutL7ULGsulnbTTPGH9Q0t5ZH3qbc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users?firstName=Shankar1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "firstName",
+							"value": "Shankar1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
