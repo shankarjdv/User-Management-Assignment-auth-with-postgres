@@ -1,5 +1,5 @@
 # User-Management-Assignment-auth-with-postgres
-
+to install dependencies run "npm install"
 run this project using "npm start" command
 ---------------------------------------------------------
 Pre-requisites
@@ -11,8 +11,6 @@ npm: Node package manager (comes with Node.js)
 Database Migration
 To create the necessary tables, run the following command:
 
-bash
-Copy code
 npx sequelize-cli db:migrate
 This will execute the migrations in the migrations/ directory and create the Users table.
 
